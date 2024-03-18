@@ -1,0 +1,253 @@
+<!--
+    This is the main HTML file for the natural burial form.
+    The purpose of this file is to give the group (composed
+    of Yilin, Liam, Connor, Samuil) a basis to work off of.
+                        (Phase 1)
+
+    Group Lead: Liam Jay
+    Authors: Liam (A00477553), Yilin (A00475433), Connor (A00465850), Samuil (A00472400)
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Define meta data for the webpage-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Create link to the buttons and icons stylesheet-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Creates a link to the Tailwind CSS style sheet-->
+    <link rel="stylesheet" href="style.css">
+    <title>Natural Burial Form</title>
+    <!--Define styles to make the form "skeleton" visible-->
+    <style>
+        table{
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        td{
+            border: 0.1rem solid black;
+            border-collapse: collapse;
+        }
+        h1 h2 h3 body{
+            padding: 0%;
+        }
+</style>
+</head>
+<!--Start establishing structure for the HTML page-->
+<body>
+    <!--Form stored in a table, each row represents a new piece of data required to apply for a natural burial-->
+    <table class="rounded-lg">
+        <!--Create title for form. Ensures text is big and visible for the user (Mary-Anne)-->
+        <div class="flex justify-center">
+            <h1 class="text-3xl font-bold mb-4">Form of Natural Burial For Mary-Anne</h1><br><br>
+        </div>
+        <tr>
+            <th>
+                <div class="flex justify-center">
+                    <h2>Primary Contact Information</h2>
+                </div>
+            </th>
+        </tr>
+        <!--Rows to house primary contact information fields. Each row 
+            consists of a label, an input, and a button for either a TTS 
+            read aloud, or a human recorded message about what the field is-->
+        <tr>
+            <td>
+                <form>
+                    <div class="mb-3">
+                        <button type="button" class="bg-gray-100 text-black border border-black hover:bg-gray-200 hover:border-gray-400 hover:text-gray-800 font-bold py-2 px-3 rounded-md"><i class="fa fa-volume-up"></i></button>
+                        <label for="legalNameInput" class="form-label">Legal Name</label>
+                        <input type="text" id="legalNameInput" class="w-full px-4 py-2 rounded-md border border-gray-300 focus:border-gray-500 focus:outline-none"><br>
+                    </div>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button type="button" class="bg-gray-100 text-black border border-black hover:bg-gray-200 hover:border-gray-400 hover:text-gray-800 font-bold py-2 px-3 rounded-md"><i class="fa fa-volume-up"></i></button>
+                <label for="preferredNameInput">Preferred Name</label>
+                <input type="text" id="preferredNameInput" class="w-full px-4 py-2 rounded-md border border-gray-300 focus:border-gray-500 focus:outline-none"><br><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button type="button" class="bg-gray-100 text-black border border-black hover:bg-gray-200 hover:border-gray-400 hover:text-gray-800 font-bold py-2 px-3 rounded-md"><i class="fa fa-volume-up"></i></button>
+                <label for="emailInput">Email Address</label>
+                <input type="text" id="emailInput" class="w-full px-4 py-2 rounded-md border border-gray-300 focus:border-gray-500 focus:outline-none"><br><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button type="button" class="bg-gray-100 text-black border border-black hover:bg-gray-200 hover:border-gray-400 hover:text-gray-800 font-bold py-2 px-3 rounded-md"><i class="fa fa-volume-up"></i></button>
+                <label for="phoneInput">Phone Number</label>
+                <input type="text" id="phoneInput" class="w-full px-4 py-2 rounded-md border border-gray-300 focus:border-gray-500 focus:outline-none"><br><br>
+            </td>
+        </tr>
+        <!--Rows to house the address fields of the applicant. 
+            A subcategory inside of the primary contact info.
+            Similarily, each input row has a sound button and 
+            input field-->
+        <tr>
+            <td>
+                <button type="button" class="bg-gray-100 text-black border border-black hover:bg-gray-200 hover:border-gray-400 hover:text-gray-800 font-bold py-2 px-3 rounded-md"><i class="fa fa-volume-up"></i></button>
+                <label for="addressInput">Street Address</label>
+                <input type="text" id="addressInput" class="w-full px-4 py-2 rounded-md border border-gray-300 focus:border-gray-500 focus:outline-none"><br><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button type="button" class="bg-gray-100 text-black border border-black hover:bg-gray-200 hover:border-gray-400 hover:text-gray-800 font-bold py-2 px-3 rounded-md"><i class="fa fa-volume-up"></i></button>
+                <label for="cityInput">City</label>
+                <input type="text" id="cityInput" class="w-full px-4 py-2 rounded-md border border-gray-300 focus:border-gray-500 focus:outline-none"><br><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button type="button" class="bg-gray-100 text-black border border-black hover:bg-gray-200 hover:border-gray-400 hover:text-gray-800 font-bold py-2 px-3 rounded-md"><i class="fa fa-volume-up"></i></button>
+                <label for="provinceInput">Province</label>
+                <input type="text" id="provinceInput" class="w-full px-4 py-2 rounded-md border border-gray-300 focus:border-gray-500 focus:outline-none"><br><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button type="button" class="bg-gray-100 text-black border border-black hover:bg-gray-200 hover:border-gray-400 hover:text-gray-800 font-bold py-2 px-3 rounded-md"><i class="fa fa-volume-up"></i></button>
+                <label for="postalCodeInput">Postal Code</label>
+                <input type="text" id="postalCodeInput" class="w-full px-4 py-2 rounded-md border border-gray-300 focus:border-gray-500 focus:outline-none"><br><br>
+            </td>
+        </tr>
+        <!--Mailing address can be empty when submit is pressed.
+            Using JS this field will be taken as null (if empty)-->
+        <tr>
+            <td>
+                <button type="button" class="bg-gray-100 text-black border border-black hover:bg-gray-200 hover:border-gray-400 hover:text-gray-800 font-bold py-2 px-3 rounded-md"><i class="fa fa-volume-up"></i></button>
+                <label for="addressLineTwoInput">Address Line 2 (Optional)</label>
+                <input type="text" id="addressLineTwoInput" class="w-full px-4 py-2 rounded-md border border-gray-300 focus:border-gray-500 focus:outline-none"><br><br>
+            </td>
+        </tr>
+        <!--Rows to house secondary contact information fields. Each row 
+            here also consists of a label, an input, and a button for either a TTS 
+            read aloud, or a human recorded message about what the field is-->
+        <tr>
+            <th>
+                <div class="flex justify-center">
+                    <br><h2>Secondary Contact Information</h2>
+                </div>    
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <button type="button" class="bg-gray-100 text-black border border-black hover:bg-gray-200 hover:border-gray-400 hover:text-gray-800 font-bold py-2 px-3 rounded-md"><i class="fa fa-volume-up"></i></button>
+                <label for="legalNameInputTwo">Legal Name</label><br>
+                <input type="text" id="legalNameInputTwo" class="w-full px-4 py-2 rounded-md border border-gray-300 focus:border-gray-500 focus:outline-none"><br><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button type="button" class="bg-gray-100 text-black border border-black hover:bg-gray-200 hover:border-gray-400 hover:text-gray-800 font-bold py-2 px-3 rounded-md"><i class="fa fa-volume-up"></i></button>
+                <label for="preferredNameInputTwo">Preferred Name</label><br>
+                <input type="text" id="preferredNameInputTwo" class="w-full px-4 py-2 rounded-md border border-gray-300 focus:border-gray-500 focus:outline-none"><br><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button type="button" class="bg-gray-100 text-black border border-black hover:bg-gray-200 hover:border-gray-400 hover:text-gray-800 font-bold py-2 px-3 rounded-md"><i class="fa fa-volume-up"></i></button>
+                <label for="emailInputTwo">Email Address</label><br>
+                <input type="text" id="emailInputTwo" class="w-full px-4 py-2 rounded-md border border-gray-300 focus:border-gray-500 focus:outline-none"><br><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button type="button" class="bg-gray-100 text-black border border-black hover:bg-gray-200 hover:border-gray-400 hover:text-gray-800 font-bold py-2 px-3 rounded-md"><i class="fa fa-volume-up"></i></button>
+                <label for="phoneInputTwo">Phone Number</label><br>
+                <input type="text" id="phoneInputTwo" class="w-full px-4 py-2 rounded-md border border-gray-300 focus:border-gray-500 focus:outline-none"><br><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button type="button" class="bg-gray-100 text-black border border-black hover:bg-gray-200 hover:border-gray-400 hover:text-gray-800 font-bold py-2 px-3 rounded-md"><i class="fa fa-volume-up"></i></button>
+                <label for="addressInputTwo">Street Address</label><br>
+                <input type="text" id="addressInputTwo" class="w-full px-4 py-2 rounded-md border border-gray-300 focus:border-gray-500 focus:outline-none"><br><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button type="button" class="bg-gray-100 text-black border border-black hover:bg-gray-200 hover:border-gray-400 hover:text-gray-800 font-bold py-2 px-3 rounded-md"><i class="fa fa-volume-up"></i></button>
+                <label for="cityInputTwo">City</label><br>
+                <input type="text" id="cityInputTwo" class="w-full px-4 py-2 rounded-md border border-gray-300 focus:border-gray-500 focus:outline-none"><br><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button type="button" class="bg-gray-100 text-black border border-black hover:bg-gray-200 hover:border-gray-400 hover:text-gray-800 font-bold py-2 px-3 rounded-md"><i class="fa fa-volume-up"></i></button>
+                <label for="provinceInputTwo">Province</label><br>
+                <input type="text" id="provinceInputTwo" class="w-full px-4 py-2 rounded-md border border-gray-300 focus:border-gray-500 focus:outline-none"><br><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button type="button" class="bg-gray-100 text-black border border-black hover:bg-gray-200 hover:border-gray-400 hover:text-gray-800 font-bold py-2 px-3 rounded-md"><i class="fa fa-volume-up"></i></button>
+                <label for="postalCodeInputTwo">Postal Code</label><br>
+                <input type="text" id="postalCodeInputTwo" class="w-full px-4 py-2 rounded-md border border-gray-300 focus:border-gray-500 focus:outline-none"><br><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button type="button" class="bg-gray-100 text-black border border-black hover:bg-gray-200 hover:border-gray-400 hover:text-gray-800 font-bold py-2 px-3 rounded-md"><i class="fa fa-volume-up"></i></button>
+                <label for="addressLineTwoInputTwo">Address Line 2 (Optional)</label><br>
+                <input type="text" id="addressLineTwoInputTwo" class="w-full px-4 py-2 rounded-md border border-gray-300 focus:border-gray-500 focus:outline-none"><br><br>
+            </td>
+        </tr>
+        <!--This row provides selections for natural markers for
+            the burial site.-->
+        <tr>
+            <th>
+                <div class="flex justify-center">
+                    <br><h2>Natural Burial Marker</h2>
+                </div>
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <button type="button" class="bg-gray-100 text-black border border-black hover:bg-gray-200 hover:border-gray-400 hover:text-gray-800 font-bold py-2 px-3 rounded-md"><i class="fa fa-volume-up"></i></button>
+                <label for="markerMaterialInput">Material of Marker(Stone By Default)</label><br>
+                <input type="text" id="markerMaterialInput" class="w-full px-4 py-2 rounded-md border border-gray-300 focus:border-gray-500 focus:outline-none"><br><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button type="button" class="bg-gray-100 text-black border border-black hover:bg-gray-200 hover:border-gray-400 hover:text-gray-800 font-bold py-2 px-3 rounded-md"><i class="fa fa-volume-up"></i></button>
+                <label for="carvedWordsInput">Carved Words(Optional)</label><br>
+                <input type="text" id="carvedWordsInput" class="w-full px-4 py-2 rounded-md border border-gray-300 focus:border-gray-500 focus:outline-none"><br><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button type="button" class="bg-gray-100 text-black border border-black hover:bg-gray-200 hover:border-gray-400 hover:text-gray-800 font-bold py-2 px-3 rounded-md"><i class="fa fa-volume-up"></i></button>
+                <label for="incisedCarvingCheck" class="mr-2">Pattern of Carving (Optional)</label><br>
+                <button type="button" class="bg-gray-100 text-black border border-black hover:bg-gray-200 hover:border-gray-400 hover:text-gray-800 font-bold py-2 px-3 rounded-md"><i class="fa fa-volume-up"></i></button>
+                <label for="incisedCarvingCheck" class="mr-2">Incised Carving</label><input type="checkbox" id="incisedCarvingCheck"><br>
+                <button type="button" class="bg-gray-100 text-black border border-black hover:bg-gray-200 hover:border-gray-400 hover:text-gray-800 font-bold py-2 px-3 rounded-md"><i class="fa fa-volume-up"></i></button>
+                <label for="reliefCarvingCheck" class="mr-2">Relief Carving</label><input type="checkbox" id="reliefCarvingCheck"><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button type="button" class="bg-gray-100 text-black border border-black hover:bg-gray-200 hover:border-gray-400 hover:text-gray-800 font-bold py-2 px-3 rounded-md"><i class="fa fa-volume-up"></i></button>
+                <label for="nameOfCemeteryInput">Name of Natural Burial Cemetery</label><br>
+                <input type="text" id="nameOfCemeteryInput" class="w-full px-4 py-2 rounded-md border border-gray-300 focus:border-gray-500 focus:outline-none"><br><br>
+            </td>
+        </tr>
+        <!--This row prompts the user to add a specified cemetery address.
+            Similarly, contains inputs for text and buttons for TTS/audio.-->
+    <!--END TABLE-->
+    </table>
+
+    <!--Add sumbit button → will be bigger in final version of form-->
+    <br>
+        <div class="flex justify-center">
+            <input id="submitButton" type="button" value="Submit" class="bg-white text-black font-bold py-2 px-4 rounded-md border border-black hover:bg-gray-100 hover:border-gray-400"><br><br>
+        </div>
+
+</body>
+</html>
